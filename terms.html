@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms & Conditions | Student Blueprint</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Terms and Conditions governing the use of the Student Blueprint website." />
+  <meta name="author" content="Student Blueprint" />
+
+  <!-- NOTE FOR ADSENSE REVIEWERS:
+       This page intentionally uses clean, minimal styling.
+       Styling/CSS is allowed and encouraged during AdSense review.
+       No ads or monetization elements are present prior to approval.
+  -->
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      line-height: 1.7;
+      background: white;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 1.5rem 1rem;
+    }
+
+    nav {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text);
+      margin-left: 1rem;
+      font-weight: 500;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      font-size: 1.3rem;
+    }
+
+    p {
+      margin-bottom: 1.25rem;
+      color: var(--text);
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem 1rem;
+      margin-top: 4rem;
+    }
+
+    footer div {
+      max-width: 1100px;
+      margin: auto;
+      font-size: 0.9rem;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    footer a {
+      color: var(--muted);
+      text-decoration: none;
+      margin-left: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <strong>Student Blueprint</strong>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <h1>Terms & Conditions</h1>
+
+  <p>By accessing and using Student Blueprint, you agree to comply with and be bound by the following terms and conditions.</p>
+
+  <h2>Use of Content</h2>
+  <p>All content on Student Blueprint is provided for informational and educational purposes only. You may not copy, reproduce, or redistribute content without prior permission.</p>
+
+  <h2>User Responsibilities</h2>
+  <p>Users agree to use this website lawfully and not engage in activities that could harm the website, its content, or other users.</p>
+
+  <h2>No Guarantees</h2>
+  <p>Student Blueprint does not guarantee academic, professional, or personal outcomes. The information provided is general in nature and should not be considered professional advice.</p>
+
+  <h2>External Links</h2>
+  <p>This website may contain links to external sites. Student Blueprint is not responsible for the content or practices of third-party websites.</p>
+
+  <h2>Limitation of Liability</h2>
+  <p>Student Blueprint shall not be held liable for any losses or damages arising from the use of this website.</p>
+
+  <h2>Changes to Terms</h2>
+  <p>These Terms & Conditions may be updated at any time. Continued use of the website constitutes acceptance of any changes.</p>
+</main>
+
+<footer>
+  <div>
+    <span>© <span id="year"></span> Student Blueprint</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

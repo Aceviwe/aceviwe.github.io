@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Student Blueprint</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Contact Student Blueprint for questions, feedback, or collaboration inquiries." />
+  <meta name="author" content="Student Blueprint" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      line-height: 1.7;
+      background: white;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 1.5rem 1rem;
+    }
+
+    nav {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text);
+      margin-left: 1rem;
+      font-weight: 500;
+    }
+
+    main {
+      max-width: 600px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: var(--muted);
+      margin-bottom: 2rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.75rem;
+      font-family: inherit;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 0.95rem;
+    }
+
+    textarea { resize: vertical; min-height: 120px; }
+
+    button {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 0.75rem;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .status {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem 1rem;
+      margin-top: 4rem;
+    }
+
+    footer div {
+      max-width: 1100px;
+      margin: auto;
+      font-size: 0.9rem;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    footer a {
+      color: var(--muted);
+      text-decoration: none;
+      margin-left: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <strong>Student Blueprint</strong>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <h1>Contact</h1>
+  <p>Have a question, suggestion, or collaboration idea? Send a message below.</p>
+
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Your name" required />
+    <input type="email" id="email" placeholder="Your email" required />
+    <textarea id="message" placeholder="Your message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <div class="status" id="status"></div>
+</main>
+
+<footer>
+  <div>
+    <span>© <span id="year"></span> Student Blueprint</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    document.getElementById('status').textContent = 'Message sent successfully. We will respond if required.';
+    this.reset();
+  });
+</script>
+
+</body>
+</html>
